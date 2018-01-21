@@ -1,0 +1,53 @@
+body {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  
+}
+#quote {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+   animation: flyin 5.0s    ease forwards;
+  opacity: 0;
+  transform: scale(2);
+  -webkit-filter: blur(4px);
+  font-size: 15vh;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#author {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Permanent Marker', cursive;
+  opacity: 0%;
+}
+
+#recycleQuote {
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  animation: recycleQuoteAnimation 5s infinite;
+}
+
+@keyframes flyin {
+   to { 
+     -webkit-filter: blur(0);
+     transform: scale(1);
+     opacity: 1;
+   }
+}
+
+@keyframes recycleQuoteAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
