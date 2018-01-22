@@ -28,7 +28,7 @@ var interval = setInterval(function() {
   if (counter == randomQuote.length) {
     clearInterval(interval);
      $("#author").hide().append("<p>&#8212;" + author + "</p>").fadeIn("slow");
-     $("#controls").append("<a href='https://www.twitter.com/intent/tweet?text=" + randomQuote + "&#8212;" + author + "'> <img src='http://www.pngall.com/wp-content/uploads/2016/07/Twitter-Download-PNG.png' width='30px' alt='Retweet Quote'></a> <img src ='https://res.cloudinary.com/dj2fvdnhm/image/upload/v1515293111/Recycling_symbol_tv0hvx.svg' id='recycleQuote' onclick='fetchQuote()' alt='Display a new quote'>");
+     $("#controls").append("<a href='https://www.twitter.com/intent/tweet?text=" + randomQuote + "&#8212;" + author + "'> <img src='https://res.cloudinary.com/dj2fvdnhm/image/upload/v1516580907/Twitter-Download-PNG_cc5dyd.png' width='30px' alt='Retweet Quote'></a> <img src ='https://res.cloudinary.com/dj2fvdnhm/image/upload/v1515293111/Recycling_symbol_tv0hvx.svg' id='recycleQuote' onclick='fetchQuote()' alt='Display a new quote'>");
   }
 
   counter++;
